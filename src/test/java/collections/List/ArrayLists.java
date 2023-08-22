@@ -14,8 +14,11 @@ public class ArrayLists {
         List anyList = new ArrayList();
         anyList.add("test");
         anyList.add(1);
+        anyList.add(true);
 
         System.out.println(anyList);
+        //o/p > test, 1, true -- insertion order is preserved
+
 
         //define and add homogeneous data
         List<String> stringList = new ArrayList<>();

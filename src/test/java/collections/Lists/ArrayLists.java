@@ -1,4 +1,4 @@
-package collections.List;
+package collections.Lists;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,9 +15,10 @@ public class ArrayLists {
         anyList.add("test");
         anyList.add(1);
         anyList.add(true);
-
+        System.out.println(anyList.add(1));
+        //returns the addition process status result
         System.out.println(anyList);
-        //o/p > test, 1, true -- insertion order is preserved
+        //o/p > test, 1, true,1 -- insertion order is preserved and duplicates are allowed.
 
 
         //define and add homogeneous data

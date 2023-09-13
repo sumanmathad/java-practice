@@ -1,5 +1,6 @@
 package playground;
 
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.json.JsonOutput;
 
 import java.util.ArrayList;
@@ -50,7 +51,15 @@ public class Experiment {
 
     }
 
+@Test
+    public void textblocks() {
+    var text = """
+            ant  antelope \s \n
+            cat "kitten" \
+            seal sea lion
+            """;
+    System.out.print(text);
 
 
-
+}
 }

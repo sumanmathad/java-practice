@@ -51,7 +51,20 @@ public class Experiment {
 
     }
 
-@Test
+    static void funct(int[] x){
+        x[0]=x[0]+10;
+    }
+
+    @Test
+    public void passbyvalue(){
+        int[] x={1};
+        funct(x);
+        System.out.println(Arrays.toString(x));
+    }
+
+
+
+    @Test
     public void textblocks() {
     var text = """
             ant  antelope \s \n

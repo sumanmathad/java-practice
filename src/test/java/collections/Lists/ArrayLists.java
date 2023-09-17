@@ -36,15 +36,13 @@ public class ArrayLists {
 
     }
     @Test
-    public void ArrayListBasicMethods(){
-        ArrayList<Integer> numbers = new ArrayList<>();
-        for(int i=0;i<5;i++){
-            numbers.add(i);
-        }
+    public void ArrayListMethods(){
+        ArrayList numbers = new ArrayList(List.of(0,1,2,3,4,5));
+        System.out.println(numbers);
         System.out.println( "numbers array : "+numbers);
-        System.out.println("Is numbers empty? : " +numbers.isEmpty());
-        System.out.println("does numbers contain 3? : "+numbers.contains(3));
-        System.out.println("Size of numbers array? : " +numbers.size());
+        System.out.println("isEmpty : " +numbers.isEmpty());
+        System.out.println("contains(3) : "+numbers.contains(3));
+        System.out.println("size : " +numbers.size());
 
     }
 

@@ -9,7 +9,7 @@ public class HashSets {
     @Test
     public void hashSetsDefinitionLoad(){
         Set anyHashSet = new HashSet();
-
+        //public boolean add(E element)
         anyHashSet.add("one");
         anyHashSet.add(2);
         anyHashSet.add(true);
@@ -63,6 +63,15 @@ public class HashSets {
         numbers.add(4);
         numbers.add(5);
         System.out.println(numbers);
+        numbers.add("");
+        numbers.add(null);
+        System.out.println(numbers.add(null));
+        System.out.println(numbers);
+        numbers.remove(null);
+        numbers.removeIf(s->s.equals(""));
+        System.out.println(numbers);
+        //
+
     }
 
 }

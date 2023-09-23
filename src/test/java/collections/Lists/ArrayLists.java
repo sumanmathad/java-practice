@@ -75,6 +75,17 @@ public class ArrayLists {
 
     @Test
     public void ListsConversions(){
+
+        //Convert Array to ArrayLists
+
+        String[] students = {"abc", "suman",
+                "tester", "fred"};
+
+        ArrayList<String> studentArraylist = (ArrayList<String>) Arrays.asList(students);
+        List <String> studentList = Arrays.asList(students);
+
+
+
         ArrayList<String> arr1 = new ArrayList<>();
 
         arr1.add(0,"zero");

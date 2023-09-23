@@ -1,12 +1,10 @@
 package playground;
 
+import com.mysql.cj.PingTarget;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.json.JsonOutput;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static com.google.common.primitives.Ints.asList;
 
@@ -50,6 +48,22 @@ public class Experiment {
         System.out.println(alist);
 
     }
+    @Test
+    public void findDuplicate() {
+
+        ArrayList<Integer> arr = new ArrayList<>(List.of(4, 2 ,1, 3, 1,3,7,3,0));
+        HashSet<Integer>set = new HashSet<>();
+
+        for(Integer i:arr){
+            if(!set.add(i)){
+                System.out.println(i);
+            }
+        }
+
+     }
+
+
+
 
     static void funct(int[] x){
         x[0]=x[0]+10;
@@ -75,4 +89,14 @@ public class Experiment {
 
 
 }
+    @Test
+    public void ToString(){
+        String[] arr = {"one", "two", "three"};
+
+        System.out.println(String.join("",arr));
+    }
+
+
+
+
 }

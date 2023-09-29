@@ -62,6 +62,19 @@ public class Experiment {
 
      }
 
+@Test
+public  void loops(){
+    int [] nums = {6,5,4,4};
+    boolean increasing = true;
+    boolean decreasing = true;
+    for (int i = 0; i < nums.length - 1; ++i) {
+        if (nums[i] > nums[i+1])
+            increasing = false;
+        if (nums[i] < nums[i+1])
+            decreasing = false;
+    }
+    System.out.println( increasing || decreasing);
+}
 
 
 

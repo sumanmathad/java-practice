@@ -1,4 +1,4 @@
-package concepts.BitWiseOperators;
+package bits.BitWiseOperators;
 
 
 import org.openqa.selenium.json.JsonOutput;
@@ -8,10 +8,12 @@ import java.security.PublicKey;
 public class BinaryPractice {
 
     public static void main(String[] args) {
+        System.out.println("Binary of 7 is "+Integer.toBinaryString(-47));
 
-        System.out.println(3^7);  //XOR  -- odd 1's 1, even 1's is 0
-        System.out.println(3|7);    //OR
-        System.out.println(~1);  //Negation
+        System.out.println("And of 3 & 7 is "+ (3&7));
+        System.out.println("XOR of 3 & 7 is" +(3^7));  //XOR  -- odd 1's 1, even 1's is 0
+        System.out.println("OR of 5 and 7 is "+(5|7));    //OR
+        System.out.println(~5);  //Negation
         System.out.println(10>>3);
         System.out.println(10<<3);
 

@@ -127,6 +127,12 @@ public  void loops(){
         System.out.println(String.join("",arr));
     }
 
+    @Test
+    public void parse(){
+        System.out.println(Integer.parseInt("100",2));
+        System.out.println(Integer.toBinaryString(4));
+    }
+
 
 
 

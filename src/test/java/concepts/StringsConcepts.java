@@ -69,4 +69,33 @@ public class StringsConcepts {
         System.out.println(moreWhitespace.replace("\\s+$",""));  // No change as its not a char/ char sequence
     }
 
+    //14/11/23
+    @Test
+    public void practice(){
+        String str1 ="You can't change me";
+        int len = str1.length();
+        System.out.println(len);
+
+        String can1 = 7 + "Up";       // Value of compile-time constant expression: "7Up"
+        String can2 = "7Up";          // "7Up"
+        System.out.println(can1 == can2);     // true
+        String word = "Up";
+        String can3 = 7 + word;
+        String can4 = "7Up";          // "7Up"
+        System.out.println(can3 == can4);
+        System.out.println(can1.equals(can2));
+        System.out.println(can3.equals(can4));
+
+        System.out.println("------");
+
+    }
+
+
+
+
+
+
+
+
+
 }

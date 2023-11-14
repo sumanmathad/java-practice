@@ -1,4 +1,4 @@
-package concepts.BitWiseOperators;
+package bits.BitWiseOperators;
 
 import org.junit.jupiter.api.Test;
 

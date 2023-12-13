@@ -133,6 +133,32 @@ public  void loops(){
         System.out.println(Integer.toBinaryString(4));
     }
 
+    @Test
+    public void search(){
+      int[] num = {2,6,7,8,9,12,14,16,18,23,35,46,50};
+      int searchNum=51;
+        System.out.println(binarySearch(num,searchNum));
+    }
+    public int binarySearch(int[] num, int searchNum){
+        int i=0;
+        int j=num.length-1;
+
+        while (i<=j){
+            int mid= (i+j)/2;
+            if (num[mid]==searchNum){
+                return mid;
+            }
+            else if(num[mid]<searchNum){
+                i=mid+1;
+            }
+            else j=mid-1;
+        }
+        System.out.println("i="+i);
+        System.out.println("j="+j);
+        return -1;
+
+    }
+
 
 
 

@@ -1,5 +1,7 @@
 package Arrays;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
 public class ArraysClass {
@@ -18,6 +20,14 @@ public class ArraysClass {
         System.out.println(nums[5]);
 
 
+    }
+    @Test
+    public void arrayReferences() {
+    int[] nums={1,2,3};
+    int[] numsCopy = nums;
+    nums[2]=0;
+        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(numsCopy));
     }
 
 }

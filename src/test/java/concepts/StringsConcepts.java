@@ -73,6 +73,8 @@ public class StringsConcepts {
     @Test
     public void practice(){
         String str1 ="You can't change me";
+        System.out.println(str1.indent(-1));  //removes whitespace from beginning
+        System.out.println(str1.indent(2));   //adds space to beginning
         int len = str1.length();
         System.out.println(len);
 
